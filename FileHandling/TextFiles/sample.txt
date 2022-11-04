@@ -1,0 +1,6 @@
+This is the sample text file for all the class xii
+cs students trying to learn text file 
+handling in python on linux
+environment and i am just trying to teach them
+the basics of text file handling. 
+this is going to be a fun for all

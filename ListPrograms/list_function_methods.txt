@@ -1,0 +1,23 @@
+# functions
+
+len() - function return total elements available in a list/tuple/string/dictionary
+sum() - find out the sum of all the integer/float Element
+max() -  return largest number of the integer/float list 
+min() -  return lowest number of the integer/float list
+del listvariable - remove the whole list 
+
+# methods available to list
+
+append() - add one element add the end of list
+insert(position,element) - add a new element at the given  position
+extend(elements) - add all the element at the end of exisiting list as its own elements
+
+remove(element) - if element present in the list then remove the element from the list
+pop()    - remove one element from the end
+
+count(element)  - count the frequency of the element
+index(element) - display the index of the element( first occurance)
+
+reverse(reverse=False) - store the list element in reverse order, set reverse=True if you want to sort list in descending order
+copy() - create a shallow copy of the list - it means both will be independent 
+clear() - remove all the elements but list variable exists

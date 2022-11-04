@@ -1,0 +1,14 @@
+
+Large Questions
+
+Q1.  Create a user defined list of 10 integer numbers. Find out the second largest 
+     number in this list.
+
+Q2.  Create a user defined list of 5 student's name. Arrange them in ascending order.
+
+Q3.  Create a user defined list of 10 integer elements. Find out the sum of all those elements
+     which has 7 as its last digit. Also display this sum on the screen.
+
+Q4.  Create a list of 10 user defined integer numbers. find out the total of all the even 
+     number and odd numbers in this list and display them on the screen.
+

@@ -1,0 +1,21 @@
+#functions applicable on string
+
+len()       -- return total number of elements avilable in that string
+max()       -- return the highest element in the given string
+min()       -- return the lowest element in the string
+
+
+#string method - ie to use these- string object is required
+
+capitalize()     - return the same string but first letter as capital letter
+casefold ()    - return the same string in small letters
+center(size,fillchar)  - place the string at the center of the the size
+count(element)      - return the occurance of element in the string
+find(element)   - return the index of the element in the string otherwise return -1
+index(element)  - return the index of the element otherwise return runtime error -'value not found'
+upper()         - convert the whole string in uppercase
+lower()         - convert the whole string in lowercase
+replace(old, new)       - replace old element with new element
+split(delimeter)  - split the current string in to a list as per given delimeter
+endswith(element) - return True if the string ends with the given element.
+startswith(element)   -  Return True if the string starts with the given element
