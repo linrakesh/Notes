@@ -3,6 +3,8 @@
 # session           : 2022-23
 # Front-end         : Python
 # Backend           : Mysql
+# DataBase Name     : foodbilling
+# table-name        : items
 # User Name         : anu
 # user Password     : pass1
 
@@ -10,8 +12,8 @@
 import mysql.connector as mysql
 
 #define two global variable
-#conn = mysql.connect(host='localhost',user='anu',password='pass1',database='foodbill')
-#cursor = conn.cursor()
+conn = mysql.connect(host='localhost',user='anu',password='pass1',database='foodbill')
+cursor = conn.cursor()
 
 #function           ":clear
 #purpose            : clear output screen
@@ -59,13 +61,13 @@ def main_menu():
     while True:
         clear()
         print('Food Billing System'.center(80,'*'))
-        print('1.   Add New Food Item')
-        print('2.   Delete Food Item')
-        print('3.   Update Food Item')
-        print('4.   Search Food Item')
-        print('5.   Billing')
-        print('6.   Exit')
-        choice= int(input('Enter your choice : '))
+        print('\n1.   Add New Food Item')
+        print('\n2.   Delete Food Item')
+        print('\n3.   Update Food Item')
+        print('\n4.   Search Food Item')
+        print('\n5.   Billing')
+        print('\n6.   Exit')
+        choice= int(input('\n\nEnter your choice (1:6) : '))
         if choice==1:
             addRecord()
             wait = input('Enter any key ........')
