@@ -116,8 +116,29 @@ def billing():
     print('Billing screen')
     print('-'*80)
     FoodItems =[]
+
+    # find out food items from items table
+    # and add into FoodItems lists
     while True :
-        no = input('Enter Item No :')
+        item=[]
+        item_no = input('Enter Item No :')
+        if item_no=='0':
+            break
+
+        sql = "select * from items where no ={}".format(item_no)
+        cursor.execute(sql)
+        result=cursor.fetchone()
+        if result !=None:
+            if len(result)<=0:
+                print('Item No does not exists.......')
+                wait= input('\n\nress any key.....')
+            else:
+                qty = int(input('Enter Quantity :'))
+                item =[item_no,result[1],result[2],qty]
+                FoodItems.append(item)
+        
+    print(FoodItems)
+
 
 
 
