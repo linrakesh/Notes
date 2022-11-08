@@ -19,3 +19,7 @@ replace(old, new)       - replace old element with new element
 split(delimeter)  - split the current string in to a list as per given delimeter
 endswith(element) - return True if the string ends with the given element.
 startswith(element)   -  Return True if the string starts with the given element
+
+isdigit()
+isalpha()
+is
