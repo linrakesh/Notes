@@ -1,26 +1,26 @@
 # find out the output of the following program segments
 
 # prorgam- 1
-str = "Today, with more than half of the world’s population online, it’s \
-      critical for any business to adopt a digital marketing strategy. These tools \
-      can increase your sales , generate leads, and earn a significant profit if done correctly. Read on to learn more about five digital marketing tools for your small business. \
-      You might be surprised to find out how effective these tools can be.\
-      Listed below are some of the most useful ones"
+str = "this is me rakesh and you are rakesh learning python"
 data = str.split()
 n = len(data)
 # fill in the blank
-print('Total Number of ...............', n)
+print('Total Number of ........', n)
 
 
 #program -2
 # replace a word from a given string
-str = str.replace('sales', 'BAADSHAH')
+str = "this is me rakesh and you are rakesh learning python"
+str = str.replace('rakesh', 'Tajindar')
 print(str)
+
 
 #program -3
 # remove a word from a given string
-str = str.replace('BAADSHAH', '')
+str = "this is me rakesh and you are rakesh learning python"
+str = str.replace('rakesh', '')
 print(str)
+
 
 #program -4
 # remove leading spaces
@@ -30,7 +30,7 @@ print(str)
 
 #program - 5
 # remove trailing spaces
-str = "This is me and this is example of trailing spaces            "
+str = "This is me and this is             "
 str = str.rstrip()
 print(str)
 

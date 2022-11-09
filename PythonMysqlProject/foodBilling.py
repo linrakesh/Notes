@@ -137,7 +137,21 @@ def billing():
                 item =[item_no,result[1],result[2],qty]
                 FoodItems.append(item)
         
-    print(FoodItems)
+    #print(FoodItems)
+    clear()
+    print('ABC Restaurant'.center(80,'*'))
+    print('-'*80)
+    print('Item No          Item Name        Price      Qty      Amount')
+    print('-'*80)
+    total_amount=0
+    for row in FoodItems:
+        amount = row[2]*row[3]
+        total_amount +=amount
+        print(row[0],row[1],row[2],row[3],amount)
+    print('-'*80)
+    print('Payable amount',total_amount)
+
+    wait= input('\n\nPress any key to continue.....')
 
 
 
