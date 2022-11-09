@@ -1,28 +1,30 @@
 import random
-words =["rakesh","ashok","uditrajranjan","nirmalbaba"]
-word = words[random.randint(0,len(words)-1)]
+words = ["rakesh", "ashok", "uditrajranjan",
+         "nirmalbaba", 'suryansh', 'Bhavya']
+word = words[random.randint(0, len(words)-1)]
 
 print(word)
-guess=[]
+guess = []
 for x in range(len(word)):
-        guess.append('-')
+    guess.append('-')
 
 for x in guess:
-    print(x, end= ' ')
+    print(x, end=' ')
 
-count=1
-while True:
-    char = input('Enter your char :')
-    if word.count(char)>=1:
+count = 1
+while count < 5:
+    char = input('\nEnter your char :')
+    if word.count(char) >= 1:
         for x in range(len(word)):
-            if word[x]==char:
-                guess[x]=char
-        
+            if word[x] == char:
+                guess[x] = char
+    else:
+        count = count+1
+
     for x in guess:
-        print(x,end= ' ')
-    count=count+1
-    if count>15:
-        break
+        print(x, end=' ')
 
-
-
+    if '-' not in guess and count < 5:
+        print('\n\nHureey !!!! You Won this Game')
+else:
+    print('\n\nBOOOOOOOOOOO!!!! You Lost the Game')
