@@ -3,8 +3,10 @@ words = ["rakesh", "ashok", "uditrajranjan",
          "nirmalbaba", 'suryansh', 'Bhavya']
 word = words[random.randint(0, len(words)-1)]
 
-print(word)
+# print(word)
+
 guess = []
+
 for x in range(len(word)):
     guess.append('-')
 
