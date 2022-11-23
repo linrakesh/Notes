@@ -1,0 +1,11 @@
+# functions supported by Tuples
+len()   - count total number of elements
+sum()   - find out the sum of all the numeric elements
+max()
+min()
+tuple()
+sorted()
+
+#methods associated with Tuples
+index()
+count()
