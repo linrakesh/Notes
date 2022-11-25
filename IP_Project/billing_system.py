@@ -114,7 +114,8 @@ def search_price():
 
     conn.close()
 
-
+#   function name           : search_menu
+#   purpose                 : Generate search menu for billing system
 def search_menu():
     while True:
         clear()
