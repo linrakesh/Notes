@@ -4,6 +4,7 @@
 #   Roll No                 : 123434
 #   session                 : 2022-23
 
+<<<<<<< HEAD
 import pandas as pd
 import time
 
@@ -39,6 +40,11 @@ def thanks():
 #   purpose                 : clear output screen
 
 
+=======
+
+#   function name           : clear()
+#   purpose                 : clear output screen
+>>>>>>> 23584d2b560668acd5582a7e5b2c5e3b97ef50f2
 def clear():
     for x in range(35):
         print()
@@ -47,6 +53,7 @@ def clear():
 #   function name           : DataFrame_creation_menu()
 #   purpose                 : Create DataFrame from different type of data
 def dataFrame_creation_menu():
+<<<<<<< HEAD
     while True:
         clear()
         print('DATAFRAME CREATION MENU '.center(80, ' '))
@@ -207,6 +214,9 @@ def data_visual_menu():
             wait = input('Press any key to continue....')
         if choice == '4':
             break
+=======
+    pass
+>>>>>>> 23584d2b560668acd5582a7e5b2c5e3b97ef50f2
 
 
 #   function name           : main_menu
@@ -222,6 +232,7 @@ def main_menu():
         print('\n4.   Exit')
         choice = input('\n\nEnter your choice (1..4):')
         if choice == '1':
+<<<<<<< HEAD
             #print('you selected dataframe creation menu')
             dataFrame_creation_menu()
             #wait = input('Press any key to continue....')
@@ -233,11 +244,28 @@ def main_menu():
             #print('Data Visualization ')
             data_visual_menu()
             #wait = input('Press any key to continue....')
+=======
+            print('you selected dataframe creation menu')
+            # dataframe_creation_menu()
+            wait = input('Press any key to continue....')
+        if choice == '2':
+            print('you have selected dataframe analysis menu')
+            # dataframe_analysis_menu()
+            wait = input('Press any key to continue....')
+        if choice == '3':
+            print('Data Visualization ')
+            # data_visualization_menu()
+            wait = input('Press any key to continue....')
+>>>>>>> 23584d2b560668acd5582a7e5b2c5e3b97ef50f2
         if choice == '4':
             break
 
 
 # calling of main_menu function
+<<<<<<< HEAD
 intro()
 main_menu()
 thanks()
+=======
+main_menu()
+>>>>>>> 23584d2b560668acd5582a7e5b2c5e3b97ef50f2
