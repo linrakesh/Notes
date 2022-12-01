@@ -1,0 +1,20 @@
+# function available to dictionar
+len()   - find out the total number of keys available in a dictionary
+max()   - find out the maximum value from the keys
+min() - find out the min value of any key
+dict() - create a blank dictionary 
+sort() - sort the keys of any given dictionary
+
+del - used to delete a key:value pair from the dictionary
+
+#methods associated with dictionary
+keys()  - return all the available keys in the given dictionary
+values()   - return all the available values in the given dictionary
+items() - return keys and value of the given dictionary
+get(key) - return the value of the given key
+update(dictionary) - update the dictionary from the given dictionary
+clear() - remove all the key value pair and return blank dictionary
+copy() - create a shallow copy of the dictionary
+pop('key') - return the value of the given key
+popitem() - return the last key:value pair from the dictionary
+setdefault('key','value) - return the value of the key if available otherwise update dictionary with key:value pair

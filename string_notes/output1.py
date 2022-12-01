@@ -18,61 +18,62 @@ else:
 
 
 #program -3
-str = "PythonFun2022"
-for x in range(len(str)):
-    if str[x].isupper():
-        str[x] = str[x]-32
-    elif str[x].isdigit():
-        str[x] = str[x]+1
+string = "PythonFun2022"
+str1 = ''
+for x in range(len(string)):
+    if string[x].isupper():
+        str1 += chr(ord(string[x])+32)
+    elif string[x].isdigit():
+        str1 += chr(ord(string[x])+1)
     else:
-        str[x] = str[x]+32
-
-print(str)
+        str1 += chr(ord(string[x])-32)
+print(str1)
 
 
 #program -4
-str = "Python Fun 2022"
-for x in range(len(str)):
-    if str[x].isupper():
-        str[x] = str[x]+32
-    elif str[x].islower():
-        str[x] = str[x]-32
-    elif str[x].isdigit():
-        str[x] = str[x]+1
-    elif str[x].isspace():
-        str[x] = '#'
-    else:
-        str[x] = str[x]+32
+string = "Python Fun 2022"
+str1 = ''
+for x in range(len(string)):
+    if string[x].isupper():
+        str1 += chr(ord(string[x])+32)
+    elif string[x].islower():
+        str1 += chr(ord(string[x])-32)
+    elif string[x].isdigit():
+        str1 += chr(ord(string[x])+1)
+    elif string[x].isspace():
+        str1 += '#'
 
-print(str)
+print(str1)
 
 
 # program -5
-str = "PythonString-3.9"
-for x in range(len(str)):
-    if str[x].isupper():
-        str[x] = str[x]+1
+str1 = "PythonString-3.9"
+str2 = ''
+for x in range(len(str1)):
+    if str1[x].isupper():
+        str2 += chr(ord(str1[x])+1)
     else:
-        if str[x].islower():
-            str[x] = str[x]-1
+        if str1[x].islower():
+            str2 += chr(ord(str1[x])-1)
         else:
-            if str[x].decimal():
-                str[x] = '#'
+            if str1[x].isdecimal():
+                str2 += '#'
             else:
-                if str.isnumeric():
-                    str[x] = str[x]-1
-print(str)
+                if str1.isnumeric():
+                    str2 += chr(ord(str[x])-1)
+print(str2)
 
 
 #prorgam -6
-str = "Python For You"
-for x in range(len(str)):
-    if str[x].isupper():
-        str[x] = str[x+1]
+str1 = "Python For You"
+str2 = ''
+for x in range(len(str1)):
+    if str1[x].isupper():
+        str2 += str1[x+1]
     else:
-        if str[x].islower():
-            str[x] = str[x]-1
+        if str1[x].islower():
+            str2 += chr(ord(str1[x])-1)
         else:
-            str[x] = '@'
+            str2 += '@'
 
-print(str)
+print(str2)
